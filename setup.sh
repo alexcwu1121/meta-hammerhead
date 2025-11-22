@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Hammerhead environment setup script
-set -e
 
 # Find the directory of this script
 # Assumes a directory structure of
@@ -11,7 +10,7 @@ set -e
 #       |- <this script>
 #   repo tool should automatically move this script to the sources/ dir level
 #   when resolving any of my manifests
-ROOT_DIR=$(cd "$(dirname "$0")" && pwd)
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Build directory
 BUILD_DIR=${ROOT_DIR}/build
