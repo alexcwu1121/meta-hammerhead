@@ -1,6 +1,6 @@
 SUMMARY = "Hammerhead core image"
 LICENSE = "MIT"
 
-inherit core-image-minimal
+inherit core-image
 
 #IMAGE_INSTALL += "something"
