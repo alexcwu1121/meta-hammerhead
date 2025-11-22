@@ -1,0 +1,12 @@
+# local.conf
+
+# Default machine
+MACHINE ??= "qemux86-64"
+
+# Default distro
+DISTRO ?= "poky"
+
+# Shared-state files from other locations
+#SSTATE_MIRRORS ?= "\
+#file://.* https://someserver.tld/share/sstate/PATH;downloadfilename=PATH \
+#file://.* file:///some/local/dir/sstate/PATH"
