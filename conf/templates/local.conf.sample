@@ -1,10 +1,10 @@
 # local.conf
 
 # Default machine
-MACHINE ??= "qemux86-64"
+MACHINE ??= "hammerhead"
 
 # Default distro
-DISTRO ?= "poky"
+DISTRO ?= "hammerhead"
 
 # Shared-state files from other locations
 #SSTATE_MIRRORS ?= "\
