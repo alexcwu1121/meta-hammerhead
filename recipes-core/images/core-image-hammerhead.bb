@@ -2,6 +2,9 @@ SUMMARY = "Hammerhead core image"
 LICENSE = "MIT"
 
 inherit core-image
+inherit extrausers
 
-# Don't make WIC images
-# IMAGE_FSTYPES = "tar.gz ext4"
+# Set default password
+EXTRA_USERS_PARAMS = "\
+    usermod -p '${PASSWD}' root; \
+    "
