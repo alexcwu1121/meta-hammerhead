@@ -13,7 +13,7 @@ SRC_URI = "git://github.com/alexcwu1121/raspberrypi-linux.git;name=machine;branc
            file://can.cfg \
            "
 
-SRCREV_machine = "6326bfe36c5da2f838a4f57614212a10ae8d5c6b"
+SRCREV_machine = "5a13c175c6b8ec50e61ec8275efa9903172eb670"
 SRCREV_meta = "52ff0d75713ce61962b325a2090bd55e216f0cf3"
 
 require recipes-kernel/linux/linux-raspberrypi.inc

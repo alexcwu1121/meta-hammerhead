@@ -47,3 +47,6 @@ IMAGE_INSTALL += " \
     "
 
 EXTRA_IMAGE_FEATURES += "ssh-server-dropbear"
+
+#SWUPDATE_IMAGES_FSTYPES[hammerhead-dev-image] = "wic.bz2"
+#inherit swupdate-image
