@@ -44,6 +44,15 @@ IMAGE_INSTALL += " \
     kmod \
     util-linux \
     dtc \
+    picocom \
+    gstreamer1.0 \
+    gstreamer1.0-plugins-base \
+    gstreamer1.0-plugins-good \
+    gstreamer1.0-plugins-bad \
+    libpisp \
+    libcamera \
+    libcamera-apps \
+    v4l-utils \
     "
 
 EXTRA_IMAGE_FEATURES += "ssh-server-dropbear"
