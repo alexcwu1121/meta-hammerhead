@@ -3,6 +3,7 @@ LINUX_BRANCH ?= "hammerhead-6.6.y"
 LINUX_KMETA_BRANCH ?= "yocto-6.6"
 KMETA = "kernel-meta"
 
+# Consider making changes in the hammerhead kernel fork instead of config fragments and patches here
 SRC_URI = "git://github.com/alexcwu1121/raspberrypi-linux.git;name=machine;branch=${LINUX_BRANCH};protocol=https \
            git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=${LINUX_KMETA_BRANCH};destsuffix=${KMETA} \
            file://powersave.cfg;layersrc=meta-raspberrypi \
@@ -13,7 +14,7 @@ SRC_URI = "git://github.com/alexcwu1121/raspberrypi-linux.git;name=machine;branc
            file://can.cfg \
            "
 
-SRCREV_machine = "a850ae30ea6078e788f7370db072cfc88a557df0"
+SRCREV_machine = "72706ead9fc0ed185e7c7067b677c3c8cf09eac5"
 SRCREV_meta = "52ff0d75713ce61962b325a2090bd55e216f0cf3"
 
 require recipes-kernel/linux/linux-raspberrypi.inc

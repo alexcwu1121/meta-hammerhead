@@ -45,15 +45,19 @@ IMAGE_INSTALL += " \
     util-linux \
     dtc \
     picocom \
-    gstreamer1.0 \
-    gstreamer1.0-plugins-base \
-    gstreamer1.0-plugins-good \
-    gstreamer1.0-plugins-bad \
     libpisp \
     libcamera \
     libcamera-apps \
     v4l-utils \
+    ffmpeg \
+    libavcodec \
     "
+
+# There may be a package config for gstreamer
+#    gstreamer1.0
+#    gstreamer1.0-plugins-base
+#    gstreamer1.0-plugins-good
+#    gstreamer1.0-plugins-bad
 
 EXTRA_IMAGE_FEATURES += "ssh-server-dropbear"
 
